@@ -1,0 +1,10 @@
+{
+    "index": {
+      "title": "Home",
+      "description": "home"
+    },
+    "about": {
+        "title":"About",
+        "description": "About me"
+    }
+  }

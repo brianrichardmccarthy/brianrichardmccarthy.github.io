@@ -1,0 +1,50 @@
+<% var filter = /(\.html$)/; %>
+<% var markdown = /(^project_[a-z1-9A-Z]*)/; %>
+<% var htmlExt = /(\.html$)/; %>
+<% var indexReplace = /(^index\.html$)/; %>
+
+<% function tree(head, tail) { %>
+  <% for (key in head) { %>
+    <% val = head[key]; %>
+    <% if (key !== '.git' && key !== '_data') { %>
+      <% if (key == '_contents') { %>
+        <% for (i in val) { %>
+          <% file = val[i] %>
+          <% if (!markdown.test(file) && filter.test(file) && !/^404\.html/.test(file)) { %>
+            <% file = file.replace(indexReplace, "home.html").replace(htmlExt, ""); %>
+            <li><a href="<%= tail + file %>">
+            
+                <%
+                
+                
+                    if ((tail + file).endsWith("/")) {
+                        %>
+                            <%= tail + file %>
+                        <%
+                    } else {
+
+                        out = tail.substring(1) + file;
+                        %>
+                        
+                            <%= out %>
+                        
+                        <%
+                    }
+                
+                
+                %>
+
+            </a></li>
+          <% } %>
+        <% } %>
+      <% } else { %>
+        <% tree(val, tail + key + "/") %>
+      <% } %>
+    <% } %>
+  <% } %>
+<% } %>
+
+<h1>Sitemap</h1>
+<ol>
+  <% tree(public, "/") %>
+</ol>
