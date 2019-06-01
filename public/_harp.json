@@ -1,11 +1,11 @@
 {
-    "globals": 
-    {
+    "globals": {
         "title": "Brian Richard McCarthy",
         "description": "I'm not that interesting",
         "css_url": "https://brianrichardmccarthy.github.io/www/assets/css/",
         "images_url": "https://brianrichardmccarthy.github.io/www/assets/images/",
-        "js_url": "https://brianrichardmccarthy.github.io/www/assets/js/"
-    }
+        "js_url": "https://brianrichardmccarthy.github.io/www/assets/js/",
+        "url": "https://brianrichardmccarthy.github.io/www/"
+    }    
   }
   

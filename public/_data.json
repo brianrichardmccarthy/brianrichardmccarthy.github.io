@@ -1,10 +1,20 @@
 {
     "index": {
       "title": "Home",
+      "layout": "/assets/_partials/_layout",
       "description": "home"
     },
     "about": {
         "title":"About",
+        "layout": "/assets/_partials/_layout",
         "description": "About me"
+    },
+    "projects": {
+        "title":"Projects",
+        "layout": "/assets/_partials/_layout",
+        "description": "projects page"
+    },
+    "feed.xml": {
+      "layout": false
     }
   }

@@ -1,0 +1,33 @@
+<div class="container">
+<% var x = 0; for(var slug in public.technology.libraries._data) { %>
+  <%
+    if (x%3 == 0) { 
+
+      if (x>0) {
+        %>
+          </div>
+        <%
+      }
+
+      %>
+        <div class="row article-row">
+      <%
+    } 
+    x++;
+  %>
+  <div class="col-sm article-card">
+  <div class="card">
+    <img src="<%= public.technology.libraries._data[slug].image %>" class="card-img-top" alt="<%= public.technology.libraries._data[slug].image_alt %>">
+    <div class="card-body">
+      <h5 class="card-title"><a href="/libraries/<%= slug %>"><%= public.technology.libraries._data[slug].title %></a></h5>
+      <p class="card-text"><%= public.technology.libraries._data[slug].desc %></p>
+      <a href="/libraries/<%= slug %>" class="btn btn-primary">See more</a>
+    </div>
+  
+  
+  </div>
+  </div>
+<% }; %> %>
+
+</div>
+</div>

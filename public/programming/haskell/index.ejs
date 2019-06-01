@@ -1,0 +1,33 @@
+<div class="container">
+<% var x = 0; for(var slug in public.programming.haskell._data) { %>
+  <%
+    if (x%3 == 0) { 
+
+      if (x>0) {
+        %>
+          </div>
+        <%
+      }
+
+      %>
+        <div class="row article-row">
+      <%
+    } 
+    x++;
+  %>
+  <div class="col-sm article-card">
+  <div class="card">
+    <img src="<%= public.programming.haskell._data[slug].image %>" class="card-img-top" alt="<%= public.programming.haskell._data[slug].image_alt %>">
+    <div class="card-body">
+      <h5 class="card-title"><a href="/haskell/<%= slug %>"><%= public.programming.haskell._data[slug].title %></a></h5>
+      <p class="card-text"><%= public.programming.haskell._data[slug].desc %></p>
+      <a href="/haskell/<%= slug %>" class="btn btn-primary">See more</a>
+    </div>
+  
+  
+  </div>
+  </div>
+<% }; %> %>
+
+</div>
+</div>

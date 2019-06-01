@@ -1,7 +1,5 @@
 <% var filter = /(\.html$)/; %>
-<% var markdown = /(^project_[a-z1-9A-Z]*)/; %>
-<% var htmlExt = /(\.html$)/; %>
-<% var indexReplace = /(^index\.html$)/; %>
+<% var replace = /(\.html$)|(^index\.html$)/; %>
 
 <% function tree(head, tail) { %>
   <% for (key in head) { %>
@@ -10,35 +8,11 @@
       <% if (key == '_contents') { %>
         <% for (i in val) { %>
           <% file = val[i] %>
-          <% if (!markdown.test(file) && filter.test(file) && !/^404\.html/.test(file)) { %>
-            <% file = file.replace(indexReplace, "home.html").replace(htmlExt, ""); %>
-            <li><a href="<%= tail + file %>">
-            
-                <%
-                
-                
-                    if ((tail + file).endsWith("/")) {
-                        %>
-                            <%= tail + file %>
-                        <%
-                    } else {
-
-                        out = tail.substring(1) + file;
-                        %>
-                        
-                            <%= out %>
-                        
-                        <%
-                    }
-                
-                
-                %>
-
-            </a></li>
+          <% if (filter.test(file) && !/^404\.html/.test(file)) { %>
+            <% file = file.replace(replace, ""); %>
+            <li><a href="<%= tail + file %>"><%= tail.substring(1) + file.length == 0 ? "home" : file %></a></li>
           <% } %>
         <% } %>
-      <% } else { %>
-        <% tree(val, tail + key + "/") %>
       <% } %>
     <% } %>
   <% } %>
