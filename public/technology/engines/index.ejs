@@ -1,5 +1,5 @@
 <div class="container">
-<% var x = 0; for(var slug in public.technology.engines._data) { %>
+<% var x = 0; for(var slug in public.programming.cpp._data) { %>
   <%
     if (x%3 == 0) { 
 
@@ -17,11 +17,11 @@
   %>
   <div class="col-sm article-card">
   <div class="card">
-    <img src="<%= public.technology.engines._data[slug].image %>" class="card-img-top" alt="<%= public.technology.engines._data[slug].image_alt %>">
+    <img src="<%= public.programming.cpp._data[slug].image %>" class="card-img-top" alt="<%= public.programming.cpp._data[slug].image_alt %>">
     <div class="card-body">
-      <h5 class="card-title"><a href="/engines/<%= slug %>"><%= public.technology.engines._data[slug].title %></a></h5>
-      <p class="card-text"><%= public.technology.engines._data[slug].desc %></p>
-      <a href="/engines/<%= slug %>" class="btn btn-primary">See more</a>
+      <h5 class="card-title"><a href="<%= slug %>"><%= public.programming.cpp._data[slug].title %></a></h5>
+      <p class="card-text"><%= public.programming.cpp._data[slug].desc %></p>
+      <a href="<%= slug %>" class="btn btn-primary">See more</a>
     </div>
   
   

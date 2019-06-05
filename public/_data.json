@@ -9,6 +9,21 @@
         "layout": "/assets/_partials/_layout",
         "description": "About me"
     },
+    "education": {
+      "title": "Home",
+      "layout": "/assets/_partials/_layout",
+      "description": "home"
+    },
+    "contact": {
+      "title": "Home",
+      "layout": "/assets/_partials/_layout",
+      "description": "home"
+    },
+    "404": {
+      "title": "404 Error",
+      "layout": "/assets/_partials/_layout",
+      "description": "home"
+    },
     "projects": {
         "title":"Projects",
         "layout": "/assets/_partials/_layout",

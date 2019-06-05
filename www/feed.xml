@@ -4,29 +4,40 @@
     <title>Brian Richard McCarthy</title>
     <link>https://brianrichardmccarthy.github.io/www/</link>
     <description>I'm not that interesting</description>
-    <atom:link href="https://brianrichardmccarthy.github.io/www//feed.xml" rel="self" type="application/rss+xml" />
-	
+    <atom:link href="https://brianrichardmccarthy.github.io/www/feed.xml" rel="self" type="application/rss+xml" />
     
     
       <item>
-        <title></title>
-		<description><![CDATA[]]></description>
-        <pubDate>Sat Jun 01 2019 22:33:33 GMT+0100 (Irish Standard Time)</pubDate>
-        <link>https://brianrichardmccarthy.github.io/www//blog/0</link>
-        <guid isPermaLink="true">https://brianrichardmccarthy.github.io/www//blog/0</guid>
+        <title>My first post</title>
+        <pubDate>Wed Jun 05 2019 21:42:12 GMT+0100 (Irish Standard Time)</pubDate>
+        <link>https://brianrichardmccarthy.github.io/www//programming/cpp/[object Object]</link>
+        <guid isPermaLink="true">https://brianrichardmccarthy.github.io/www//programming/cpp/[object Object]</guid>
+      </item>
+    
+    
+      <item>
+        <title>My Second post</title>
+        <pubDate>Wed Jun 05 2019 21:42:12 GMT+0100 (Irish Standard Time)</pubDate>
+        <link>https://brianrichardmccarthy.github.io/www//programming/cpp/[object Object]</link>
+        <guid isPermaLink="true">https://brianrichardmccarthy.github.io/www//programming/cpp/[object Object]</guid>
       </item>
     
     
     
-    
       <item>
-        <title></title>
-		<description><![CDATA[]]></description>
-        <pubDate>Sat Jun 01 2019 22:33:33 GMT+0100 (Irish Standard Time)</pubDate>
-        <link>https://brianrichardmccarthy.github.io/www//blog/1</link>
-        <guid isPermaLink="true">https://brianrichardmccarthy.github.io/www//blog/1</guid>
+        <title>My first post</title>
+        <pubDate>Wed Jun 05 2019 21:42:12 GMT+0100 (Irish Standard Time)</pubDate>
+        <link>https://brianrichardmccarthy.github.io/www//programming/java/[object Object]</link>
+        <guid isPermaLink="true">https://brianrichardmccarthy.github.io/www//programming/java/[object Object]</guid>
       </item>
     
+    
+      <item>
+        <title>My Second post</title>
+        <pubDate>Wed Jun 05 2019 21:42:12 GMT+0100 (Irish Standard Time)</pubDate>
+        <link>https://brianrichardmccarthy.github.io/www//programming/java/[object Object]</link>
+        <guid isPermaLink="true">https://brianrichardmccarthy.github.io/www//programming/java/[object Object]</guid>
+      </item>
     
   </channel>
 </rss>

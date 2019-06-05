@@ -5,7 +5,8 @@
         "css_url": "https://brianrichardmccarthy.github.io/www/assets/css/",
         "images_url": "https://brianrichardmccarthy.github.io/www/assets/images/",
         "js_url": "https://brianrichardmccarthy.github.io/www/assets/js/",
-        "url": "https://brianrichardmccarthy.github.io/www/"
+        "url": "https://brianrichardmccarthy.github.io/www/",
+        "layout": "/assets/_partials/_layout"
     }    
   }
   

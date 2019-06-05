@@ -2,23 +2,23 @@
 <% var replace = /(\.html$)|(^index\.html$)/; %>
 
 <% function tree(head, tail) { %>
-  <% for (key in head) { %>
-    <% val = head[key]; %>
-    <% if (key !== '.git' && key !== '_data') { %>
-      <% if (key == '_contents') { %>
-        <% for (i in val) { %>
-          <% file = val[i] %>
-          <% if (filter.test(file) && !/^404\.html/.test(file)) { %>
-            <% file = file.replace(replace, ""); %>
-            <li><a href="<%= tail + file %>"><%= tail.substring(1) + file.length == 0 ? "home" : file %></a></li>
-          <% } %>
-        <% } %>
-      <% } %>
-    <% } %>
-  <% } %>
+<% for (key in head) { %>
+<% val = head[key]; %>
+<% if (key !== '.git' && key !== '_data') { %>
+<% if (key == '_contents') { %>
+<% for (i in val) { %>
+<% file = val[i] %>
+<% if (filter.test(file) && !/^404\.html/.test(file)) { %>
+<% file = file.replace(replace, ""); %>
+<li><a href="<%= tail + file %>"><%= tail.substring(1) + file.length == 0 ? "home" : file %></a></li>
+<% } %>
+<% } %>
+<% } %>
+<% } %>
+<% } %>
 <% } %>
 
 <h1>Sitemap</h1>
-<ol>
+<ol id="sitemap">
   <% tree(public, "/") %>
 </ol>
